@@ -1,44 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-<style> 
-div {
-  width: 10px;
-  height: 1000px;
-  background: black;
-  transition: width 0.1s linear 0.1s;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .my-button {
+            width: 100px;
+            height: 30px;
+            transition: all 0.3s ease; /* 添加過渡效果 */
+        }
 
-div:hover {
-  width: 100px;
-}
-</style>
+        .my-button:hover {
+            width: 110px;
+            height: 40px;
+        }
+    </style>
 </head>
 <body>
-
-<h1>The transition Property</h1>
-
-<p>Click the button below to toggle the width of the div element:</p>
-<div id=”myDiv“>
-  <a href=”https://kumaaaaaaaaaaaakuaaaaa.github.io/wp/html/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.html“ style=”color: white; text-decoration: none;“>自我介紹</a>
-</div>
-<button onclick=”toggleWidth()“>Toggle Width</button>
-
-<script>
-function toggleWidth() {
-  var element = document.getElementById(”myDiv“);
-  element.classList.toggle(”expanded“);
-</style>
-</head>
-<body>
-
-<h1>Using The transition Shorthand Property</h1>
-
-<p>Hover over the div element below, to see the transition effect:</p>
-
-<div></div>
-
-<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
-
+    <button class="my-button">按我</button>
 </body>
 </html>
