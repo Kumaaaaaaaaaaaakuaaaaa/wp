@@ -1,29 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .my-button {
-            width: 100px;
-            height: 30px;
-            transition: all 0.3s ease; 
-        }
+<html>
+    <body>
+        <button onclick="job()">按我</button>
+        <script>
+            function job() {
+                width += 10;
+                height += 10;
+                b.style = `position:${position}; width:${width}; height:${height}; left:${left}; top:${top1};`;
+            }
+            let position = "absolute";
+            let width = 600;
+            let height = 400;
+            let left = 200;
+            let top1 = 200;
+            let b = document.querySelector('button');
 
-        .my-button:hover {
-            width: 110px;
-            height: 40px;
-        }
-    </style>
-</head>
-<body>
-    <button class="my-button" onclick="alert('按鈕被點擊了！')">按我</button>
-    <script>
-        // 添加點擊事件
-        const button = document.querySelector('.my-button');
-        button.addEventListener('click', () => {
-            alert('按鈕被點擊了！');
-        });
-    </script>
-</body>
+            b.style = `position:${position}; width:${width}; height:${height}; left:${left}; top:${top1};`;
+        </script>
+    </body>
 </html>
