@@ -17,6 +17,13 @@
     </style>
 </head>
 <body>
-    <button class="my-button">按我</button>
+    <button class="my-button" onclick="alert('按鈕被點擊了！')">按我</button>
+    <script>
+        // 添加點擊事件
+        const button = document.querySelector('.my-button');
+        button.addEventListener('click', () => {
+            alert('按鈕被點擊了！');
+        });
+    </script>
 </body>
 </html>
