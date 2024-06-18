@@ -13,11 +13,10 @@
 <button class="my-button" id="movingButton">點擊我</button>
 
 <script>
-// 初始化按鈕位置
 var btn = document.getElementById('movingButton');
 btn.style.transform = 'translateX(0px) translateY(0px)';
 
-// 每秒移動按鈕到一個新的隨機位置
+
 setInterval(function() {
   var x = Math.random() * (window.innerWidth - btn.clientWidth);
   var y = Math.random() * (window.innerHeight - btn.clientHeight);
