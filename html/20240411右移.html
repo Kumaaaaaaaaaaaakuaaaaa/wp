@@ -7,12 +7,16 @@
         .my-button {
             width: 100px;
             height: 30px;
-            transition: all 0.3s ease; /* 添加過渡效果 */
+            transition: all 0.3s ease; 
         }
 
         .my-button:hover {
-            transform: translateX(10px); /* 右移 10 像素 */
+            transform: translateX(10px); 
         }
+        button.onclick = function()
+{
+    button.style.left = (parseInt(button.style.left, 10) + 10) + 'px';
+};
     </style>
 </head>
 <body>
