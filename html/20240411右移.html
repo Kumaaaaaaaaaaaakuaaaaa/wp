@@ -8,21 +8,21 @@
             position: relative; /* 設定定位方式 */
             width: 100px;
             height: 30px;
-            background-color: #4CAF50;
+            background-color: #007733;
             color: white;
             transition: all 0.3s ease;
         }
     </style>
 </head>
 <body>
-    <button class="my-button" onclick="moveButton()">按我</button>
+    <button class="my-button" onclick="moveButton()">***</button>
 
     <script>
         // 按鈕移動的函數
         function moveButton() {
             var btn = document.querySelector('.my-button');
             var position = 0;
-            var interval = setInterval(frame, 5); // 每5毫秒移動一次
+            var interval = setInterval(frame, 9); 
 
             function frame() {
                 if (position == 350) { // 移動距離限制
