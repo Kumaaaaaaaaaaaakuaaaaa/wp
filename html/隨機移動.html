@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-function showTime() {
-    var today=new Date();
-    var h=today.getHours();
-    var m=today.getMinutes();
-    var s=today.getSeconds();
-    document.getElementById('time').innerHTML = h+":"+m+":"+s;
-    setTimeout(showTime,1000);
+<style>
+.my-button {
+  position: absolute;
+  transition: transform 1s ease;
 }
-</script>
+</style>
 </head>
+<body>
 
-<body onload="showTime()">
+<button class="my-button" id="movingButton">點擊我</button>
 
-<div id="time"></div>
+<script>
+// 初始化按鈕位置
+var btn = document.getElementById('movingButton');
+btn.style.transform = 'translateX(0px) translateY(0px)';
+
+// 每秒移動按鈕到一個新的隨機位置
+setInterval(function() {
+  var x = Math.random() * (window.innerWidth - btn.clientWidth);
+  var y = Math.random() * (window.innerHeight - btn.clientHeight);
+  btn.style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px)';
+}, 1000);
+</script>
 
 </body>
 </html>
