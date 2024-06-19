@@ -22,9 +22,9 @@ async function groqChat(q) {
 }
 let a ;
 
-if (a = "喜歡什麼") {
+if (a == "喜歡什麼") {
     console.log("睡覺");
-} else if (a = "不喜歡什麼") {
+} else if (a == "不喜歡什麼") {
     console.log("起床");
 } else {
    groqChat(q) ;
