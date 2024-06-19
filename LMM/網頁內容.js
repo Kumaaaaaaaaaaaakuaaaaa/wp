@@ -12,7 +12,7 @@ async function groqChat(q) {
         }),
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json',/*處理型態*/
             'Authorization': `Bearer ${key}`,
         }
     })
