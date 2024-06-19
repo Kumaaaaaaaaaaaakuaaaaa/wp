@@ -30,6 +30,21 @@ async function chat() {
     let answer = await groqChat(qNode.value)
     responseNode.innerText = answer
 }
+const translate = require('@vitalets/google-translate-api');
+
+async function translateText(text, targetLanguage) {
+  try {
+    const translation = await translate(text, { to: targetLanguage });
+    console.log(translation.text);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+// 使用示例
+translateText('Hello, world!', 'zh-CN').then(() => {
+  console.log('翻译完成');
+});
 
 
 
