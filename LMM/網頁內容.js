@@ -1,8 +1,9 @@
 const main = document.querySelector('main')
 
-let key = "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"
+let key = "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"
 
 async function groqChat(q) {
+
     const jsonResponse = await fetch("https://api.groq.com/openai/v1/chat/completions", 
     {
         body: JSON.stringify({
@@ -20,6 +21,15 @@ async function groqChat(q) {
     console.log(JSON.stringify(jsonData, null, 2))
     return jsonData.choices[0].message.content
 }
+
+
+async function chat() {
+    let qNode = document.querySelector('#question')
+    let responseNode = document.querySelector('#response')
+    responseNode.innerText = '詢問 ChatGPT 中，請稍等幾秒鐘 ...'
+    let answer = await groqChat(qNode.value)
+    responseNode.innerText = answer
+}
 let a ;
 
 if (a == "喜歡什麼") {
@@ -30,11 +40,3 @@ if (a == "喜歡什麼") {
    groqChat(q) ;
 }
 
-
-async function chat() {
-    let qNode = document.querySelector('#question')
-    let responseNode = document.querySelector('#response')
-    responseNode.innerText = '詢問 ChatGPT 中，請稍等幾秒鐘 ...'
-    let answer = await groqChat(qNode.value)
-    responseNode.innerText = answer
-}
