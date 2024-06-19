@@ -2,6 +2,27 @@
 <html>
 <title>**台灣黑熊分布**</title>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  const layout = {
+  title: '台灣黑熊分布圖',
+  xaxis: {
+    title: '年份',
+    showgrid: ture, // 是否顯示網格線
+    zeroline: false, // 是否顯示零軸線
+    tickangle: -45 // 軸標籤的角度
+  },
+  yaxis: {
+    title: '數量',
+    showline: true // 是否顯示軸線
+  },
+  plot_bgcolor: 'rgba(0,0,0,0)', // 圖表背景顏色
+  paper_bgcolor: '#FAEBD7', // 整個畫布的背景顏色
+  font: {
+    family: 'Arial, sans-serif', // 字體
+    size: 12, // 字體大小
+    color: '#7f7f7f' // 字體顏色
+  }
+};
+
 <body>
 <h1>**台灣黑熊**</h1>
 <p>臺灣黑熊屬於亞洲黑熊(Ursus thibetanus formosanus)的七個亞種之一，是臺灣唯一原產的熊類，臺灣黑熊為瀕臨絕種野生動物。目前族群在臺灣僅剩下約200~600隻。</p>
