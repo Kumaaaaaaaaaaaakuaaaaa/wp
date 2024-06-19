@@ -20,6 +20,15 @@ async function groqChat(q) {
     console.log(JSON.stringify(jsonData, null, 2))
     return jsonData.choices[0].message.content
 }
+let a ;
+
+if (a = "喜歡什麼") {
+    console.log("睡覺");
+} else if (a = "不喜歡什麼") {
+    console.log("起床");
+} else {
+   groqChat(q) ;
+}
 
 
 async function chat() {
