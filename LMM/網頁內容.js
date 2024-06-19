@@ -22,29 +22,3 @@ async function groqChat(q) {
     return jsonData.choices[0].message.content
 }
 
-
-async function chat() {
-    let qNode = document.querySelector('#question')
-    let responseNode = document.querySelector('#response')
-    responseNode.innerText = '詢問 ChatGPT 中，請稍等幾秒鐘 ...'
-    let answer = await groqChat(qNode.value)
-    responseNode.innerText = answer
-}
-const translate = require('@vitalets/google-translate-api');
-
-async function translateText(text, targetLanguage) {
-  try {
-    const translation = await translate(text, { to: targetLanguage });
-    console.log(translation.text);
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-// 使用示例
-translateText('Hello, world!', 'zh-CN').then(() => {
-  console.log('翻译完成');
-});
-
-
-
