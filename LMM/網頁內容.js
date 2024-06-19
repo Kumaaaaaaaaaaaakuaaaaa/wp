@@ -31,13 +31,5 @@ async function chat() {
     responseNode.innerText = answer
 }
 
-let a ;
 
-if (a == "喜歡什麼") {
-    console.log("睡覺");
-} else if (a == "不喜歡什麼") {
-    console.log("起床");
-} else {
-   groqChat(q) ;
-}
 
