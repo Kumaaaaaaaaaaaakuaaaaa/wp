@@ -8,7 +8,7 @@ async function groqChat(q) {
     {
         body: JSON.stringify({
             "model": "llama3-8b-8192",
-            "messages": [{"role": "user", "content": q, 請用中文回答}],
+            "messages": [{"role": "user", "content": q }],
             "temperature": 0.7
         }),
         method: 'POST',
