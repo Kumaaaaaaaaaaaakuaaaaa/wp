@@ -1,42 +1,57 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUMA快問快答</title>
     <link rel="stylesheet" href="main.css">
     <style>
-    body {
-    background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTVkZjQ4dDAxNnU5NnFqdDE1bmNwdjBhYjF0aWhndjcwa2lqaHU2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SutB3SQizExZskB5P1/giphy.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   }  
-   div.container {
-    background-color: rgba(255, 255, 255, 0.8); /* 半透明的白色背景 */
-    width: 80%; /* 設定寬度，可根據需要調整 */
-    padding: 20px; /* 內邊距 */
-    margin: auto; /* 水平居中 */
-    border-radius: 10px; /* 圓角邊框 */
-   }
-   * {
-    color: #007799;
-    text-align: center;
-   } 
-    {
-    color: #003377;
-    font-family: verdana;
-    font-size: 300%;
-   }
-        
-</style>
+        body {
+            background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTVkZjQ4dDAxNnU5NnFqdDE1bmNwdjBhYjF0aWhndjcwa2lqaHU2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SutB3SQizExZskB5P1/giphy.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        div.container {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 80%;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        * {
+            color: #007799;
+            text-align: center;
+        }
+        h1 {
+            color: #003377;
+            font-family: verdana;
+            font-size: 300%;
+        }
+        #question {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #response {
+            background-color: #f1f1f1;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            margin-top: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-<h1>//**KUMA快問快答**//</h1>
-<aside></aside>
-<main>
-    <textarea id="question" placeholder="請輸入你要問的問題 ..."></textarea>
-    <button onclick="chat()">送出</button>
-    <div id="response" placeholder="輸出文章"></div>    
-</main>
-<footer></footer>
-<script src="main.js"></script>
+    <div class="container">
+        <h1>KUMA快問快答</h1>
+        <main>
+            <textarea id="question" placeholder="請輸入你要問的問題 ..."></textarea>
+            <button onclick="chat()">送出</button>
+            <div id="response" placeholder="回答將顯示在這裡"></div>    
+        </main>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
