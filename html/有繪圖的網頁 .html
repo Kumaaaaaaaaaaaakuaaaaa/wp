@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
-<title>** 台灣黑熊分布 **</title>
+<title>**台灣黑熊分布**</title>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <body>
 <h1>**台灣黑熊**</h1>
-<p>臺灣黑熊屬亞洲黑熊(Ursus thibetanus formosanus)的七個亞種之一，是臺灣唯一原產的熊類，臺灣黑熊為瀕臨絕種野生動物。目前族群在臺灣僅剩下約200~600隻。</p>
+<p>臺灣黑熊屬於亞洲黑熊(Ursus thibetanus formosanus)的七個亞種之一，是臺灣唯一原產的熊類，臺灣黑熊為瀕臨絕種野生動物。目前族群在臺灣僅剩下約200~600隻。</p>
 <div id="myPlot" style="width:100%;max-width:700px"></div>
 <script>
 const xArray = [19,20,110,15,105,45,20];
 const yArray = [2006,2007,2008,2009,2010,2011,2012];
 
-// Define Data
+// 定義數據
 const data = [{
   x: xArray,
   y: yArray,
   mode:"lines"
 }];
 
-// Define Layout
+// 定義佈局
 const layout = {
-  xaxis: {range: [2006, 2015], title: "年份"},
+  xaxis: {range: [2006, 2012], title: "年份"},
   yaxis: {range: [0,120], title: "數量"},  
   title: "台灣黑熊分布圖"
 };
 
-// Display using Plotly
+// 使用Plotly顯示
 Plotly.newPlot("myPlot", data, layout);
 </script>
-
-
 </body>
 </html>
