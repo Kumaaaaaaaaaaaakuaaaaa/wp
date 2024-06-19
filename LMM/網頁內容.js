@@ -3,7 +3,7 @@ const qNode = document.querySelector('#question');
 const responseNode = document.querySelector('#response');
 
 // 定義 API 金鑰和 groqChat 函數
-let key = "您的API金鑰";
+let key = "fc10882a83710937fbdb936f9ab8213912dfb96e";
 async function groqChat(q) {
     try {
         const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
