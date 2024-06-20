@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+ width: 10px;
+  height: 100vh;
+  background: black;
+  transition: width 1s;
+}
 
+.expanded {
+  width: 100px;
+}
+</style>
+</head>
+<body>
+	
+    
+<h1>クマの自己紹介 </h1>
+
+<p>打開連結將會更多資訊</p>
+<button onclick="button()">＼＼＼</button>
+<div id="myDiv">  */為側欄的的網頁
+  <a href=”https://kumaaaaaaaaaaaakuaaaaa.github.io/wp/html/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.html“ style=”color: white; text-decoration: none;“>自我介紹</a>
+</div>
+<button onclick=”toggleWidth()“>Toggle Width</button>
+
+
+<script>
+function button() {
+  var element = document.getElementById("myDiv");
+  element.classList.toggle("expanded");
+}
+</script>
+
+</body>
+</html>
