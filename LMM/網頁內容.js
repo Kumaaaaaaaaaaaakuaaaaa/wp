@@ -1,6 +1,6 @@
 const main = document.querySelector('main')
 
-let key = "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"
+let key = "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"
 
 async function groqChat(q) {
  
