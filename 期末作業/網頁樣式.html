@@ -3,31 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>翻頁效果</title>
-    <style>
-        /* 與之前的 CSS 保持一致 */
-        /* ... */
-    </style>
+    <title>My Two Pages</title>
 </head>
 <body>
-    <div class="book">
-        <div class="page">
-            <div class="front">Front Page</div>
-            <div class="back">Back Page</div>
-        </div>
+    <!-- 第一個頁面 -->
+    <div id="page1">
+        <h1>Page 1</h1>
+        <p>This is the content of Page 1.</p>
     </div>
-    <script>
-        const pages = document.querySelectorAll('.page');
-        let currentPage = 0;
 
-        function nextPage() {
-            pages[currentPage].classList.remove('active');
-            currentPage = (currentPage + 1) % pages.length;
-            pages[currentPage].classList.add('active');
-        }
-
-        // 假設你有一個「下一頁」按鈕，點擊時呼叫 nextPage 函式
-        // 例如：<button onclick="nextPage()">下一頁</button>
-    </script>
+    <!-- 第二個頁面 -->
+    <div id="page2">
+        <h1>Page 2</h1>
+        <p>This is the content of Page 2.</p>
+    </div>
 </body>
 </html>
