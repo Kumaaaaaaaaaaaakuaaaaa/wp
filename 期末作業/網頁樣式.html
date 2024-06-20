@@ -5,7 +5,25 @@
 <title>** kumaのvlog **</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="http://www.turnjs.com/lib/turn.min.js"></script>  /*JavaScript 插件*/
+
 <style>
+ <div id="flipbook">
+    <div class="hard">Turn.js</div>
+    <div>Page 1</div>
+    <div>Page 2</div>
+    <div>Page 3</div>
+</div>
+  <script>
+    $("#flipbook").turn({
+        width: 400, // 翻頁檢視的寬度
+        height: 300, // 翻頁檢視的高度
+        autoCenter: true // 是否居中
+    });
+</script>
+
+
 * {
   box-sizing: border-box;
 }
