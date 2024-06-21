@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .my-button {
+            position: relative; /* 設定定位方式 */
+            width: 100px;
+            height: 30px;
+            background-color: #007733;
+            color: white;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <button class="my-button" onclick="moveButton()">***</button>
+
+    <script>
+        // 按鈕移動的函數
+        function moveButton() {
+            var btn = document.querySelector('.my-button');
+            var position = 0;
+            var interval = setInterval(frame, 9); 
+
+            function frame() {
+                if (position == 350) { // 移動距離限制
+                    clearInterval(interval); // 達到限制時停止移動
+                } else {
+                    position++; 
+                    btn.style.top = position + 'px'; // 垂直移動
+                    btn.style.left = position + 'px'; // 水平移動
+                }
+            }
+        }
+    </script>
+</body>
+</html>
