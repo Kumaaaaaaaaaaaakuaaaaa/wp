@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 10px;
+  height: 1000px;
+  background: black;
+  transition: width 0.1s linear 0.1s;
+}
+
+div:hover {
+  width: 100px;
+}
+</style>
+</head>
+<body>
+
+<h1>クマの自己紹介</h1>
+
+<p>打開連結將會更多資訊</p>
+<div id=”myDiv“>
+  <a href=”https://kumaaaaaaaaaaaakuaaaaa.github.io/wp/html/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.html“ style=”color: white; text-decoration: none;“>自我介紹</a>
+</div>
+<button onclick=”toggleWidth()“>Toggle Width</button>
+
+<script>
+function toggleWidth() {
+  var element = document.getElementById(”myDiv“);
+  element.classList.toggle(”expanded“);
+</style>
+</head>
+<body>
+
+<h1>Using The transition Shorthand Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+</body>
+</html>
