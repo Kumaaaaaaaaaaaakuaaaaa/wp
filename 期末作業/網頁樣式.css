@@ -13,7 +13,7 @@ header {
 }
 
 nav a {
-    color: #fff;
+    color:  #8C8CFF;
     text-decoration: none;
     margin-right: 20px;
 }
@@ -25,7 +25,7 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color:  #8C8CFF;
     color: #fff;
     text-align: center;
     padding: 10px;
